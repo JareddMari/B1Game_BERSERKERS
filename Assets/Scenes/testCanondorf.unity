@@ -370,6 +370,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &614877864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 614877865}
+  m_Layer: 0
+  m_Name: CanonTip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &614877865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614877864}
+  m_LocalRotation: {x: -0, y: -0.7071065, z: -0, w: 0.7071072}
+  m_LocalPosition: {x: 0.46, y: 1.34, z: 0.08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1562369414}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1 &1108880936
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562369414}
+  - component: {fileID: 1562369415}
   m_Layer: 0
   m_Name: Canon
   m_TagString: Untagged
@@ -476,15 +505,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562369413}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.301117, y: 0.7124276, z: 0.50405735}
+  m_LocalRotation: {x: -0.082864895, y: 0.3092566, z: -0.2451948, w: 0.915081}
+  m_LocalPosition: {x: 15.015198, y: 2.8364916, z: 3.1721394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1108880937}
   - {fileID: 278708284}
+  - {fileID: 614877865}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 37.346, z: -30.000002}
+--- !u!114 &1562369415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1562369413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b0e414a6bbf83438d542315abe16c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectil: {fileID: 1451155664011618, guid: ee9c2eba12bd86d46acf3d42e061c07a, type: 2}
+  CanonTip: {fileID: 614877865}
+  force: 1
 --- !u!1 &1786472181
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,10 +665,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2003090316}
-  m_LocalRotation: {x: -0, y: -0.35136104, z: -0, w: 0.9362401}
-  m_LocalPosition: {x: 20.3, y: 3.43, z: -11.33}
+  m_LocalRotation: {x: -0, y: -0.9762137, z: -0, w: 0.2168105}
+  m_LocalPosition: {x: 18.14, y: 3.43, z: 11.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -41.141003, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -154.95601, z: 0}
