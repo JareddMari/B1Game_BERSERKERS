@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class panpan : MonoBehaviour {
+public class TirCanon : MonoBehaviour {
     public GameObject Projectil;
     [SerializeField] private Transform CanonTip;
     public int force = 1; 
