@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rotationCanon : MonoBehaviour {
 
-    public float speedRotation = 1f; // Variable de la vitesse de rotation
+    public float speedRotation; // Variable de la vitesse de rotation
     
 	// Use this for initialization
 	void Start () {
@@ -15,16 +15,16 @@ public class rotationCanon : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey("left"))
         {
-            transform.Rotate(0, 0,-speedRotation ); // Rotation vers la gauche a la vitesse 1
+            transform.Rotate(Vector3.forward * speedRotation * Time.deltaTime); // Rotation vers la gauche a la vitesse 1
         }
         if(Input.GetKey("right"))
         {
-            transform.Rotate(0, 0, speedRotation); //Rotation vers la droite a la vitesse 1
+            transform.Rotate(Vector3.back * speedRotation * Time.deltaTime); //Rotation vers la droite a la vitesse 1
             
         }
 
 	}
     
 }
-//Je n'arrive pas a bloquer la rotation quand le game object atteind les 180° vous pensez pouvoir le faire ?
+
 

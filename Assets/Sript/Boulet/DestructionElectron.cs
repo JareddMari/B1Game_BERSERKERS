@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DestructionElectron : MonoBehaviour {
 
+    public GameObject Atome;
+
 	// Use this for initialization
 	void Start () {
 		

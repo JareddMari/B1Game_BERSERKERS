@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MenuScene.unity
+    guid: 3d038b6319b84af498f03b0334062852
+  - enabled: 1
+    path: Assets/Scenes/PauseScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/testCanondorf.unity
+    guid: 273fe1fd40371524c9298444e2a75be4
+  - enabled: 1
+    path: Assets/Scenes/Berserk.unity
+    guid: dafd67658a026744396094e075e8bc26
   m_configObjects: {}
