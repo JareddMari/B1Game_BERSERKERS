@@ -12,8 +12,12 @@ public class panpan : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    void Update() {
-        
+    void Update()
+    {
+
+        Boulet boulet = FindObjectOfType<Boulet>();
+        if (boulet == null)
+        {
             if (Input.GetMouseButtonDown(0))
             {
                 GameObject Boule = Instantiate(Projectil, Cube.position, Cube.rotation) as GameObject;
@@ -21,3 +25,4 @@ public class panpan : MonoBehaviour {
             }
         }
     }
+}

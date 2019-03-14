@@ -3,24 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Uimanagerpause : MonoBehaviour {
+public class Uimanagerpause : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public GameObject pauseMenu;
+    public GameObject VictoryMenu;
+    public GameObject atomeInstable;
 
-    public void Resume()
+    // Use this for initialization
+    void Start()
     {
-        SceneManager.LoadScene("Berserk");
+
+        VictoryMenu.SetActive(false);
+        
     }
-    public void CQuit()
+
+    // Update is called once per frame
+    void Update()
     {
-        SceneManager.LoadScene("MenuScene");
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePauseMenu();
+        }
+          
+            if (atomeInstable == null)
+             {
+            VictoryMenu.SetActive(true);
+            Debug.Log(VictoryMenu);
+             }
     }
+
+    
+    public void TogglePauseMenu()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        if (pauseMenu.activeSelf)
+        {
+
+            Time.timeScale = 0f;
+        }
+        else if (!pauseMenu.activeSelf)
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }

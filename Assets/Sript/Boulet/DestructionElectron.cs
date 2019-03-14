@@ -11,10 +11,10 @@ public class DestructionElectron : MonoBehaviour {
 		
 	}
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider Atome)
     {
-        Destroy(other.gameObject);
-        Destroy(gameObject);
+        Destroy(Atome.gameObject);
+        //Destroy(gameObject);
     }
     // Update is called once per frame
     void Update () {

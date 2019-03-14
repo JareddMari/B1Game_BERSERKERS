@@ -14,6 +14,6 @@ public class Boulet : MonoBehaviour {
 
     private void Start()
     {
-        r_Rigidbody.AddForce(-transform.forward * Force, ForceMode.Impulse);
+        r_Rigidbody.AddForce(transform.forward * Force, ForceMode.Impulse);
     }
 }

@@ -17,15 +17,32 @@ public class UImanager : MonoBehaviour {
 
     public void Play()
     {
-        SceneManager.LoadScene("PauseScene");
+        SceneManager.LoadScene("Level2Building");
     }
     public void Command()
     {
-        SceneManager.LoadScene("testCanondorf");
+        SceneManager.LoadScene(5);
     }
 
     public void Leave()
     {
         Application.Quit();
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+
+    public void BackToMainMenu()
+
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Done()
+    {
+        SceneManager.LoadScene(0);
     }
 }

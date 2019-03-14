@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PauseScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/testCanondorf.unity
-    guid: 273fe1fd40371524c9298444e2a75be4
-  - enabled: 1
     path: Assets/Scenes/Berserk.unity
     guid: dafd67658a026744396094e075e8bc26
+  - enabled: 1
+    path: Assets/Scenes/Level2Building.unity
+    guid: e1457d81b7a25de47b66c83d8468f528
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: a4c963513e2270b4283d13b695acb181
+  - enabled: 1
+    path: Assets/Scenes/CommandScene.unity
+    guid: 231d531b4610702448d2dd5d2b0154f1
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: 08e2f3afe4d27d04492598508b2019ea
   m_configObjects: {}
